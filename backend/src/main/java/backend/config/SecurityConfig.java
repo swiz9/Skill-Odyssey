@@ -27,7 +27,7 @@ public class SecurityConfig {
                                 "/media/**",
                                 "/sendVerificationCode/**",
                                 "/uploads/profile/**",
-                                "/mealprogress/**",
+                                "/learningprogress/**",
                                 "/learningPlan/**",
                                 "/notifications/**"
                         ).permitAll()
