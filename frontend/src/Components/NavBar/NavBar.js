@@ -77,7 +77,7 @@ function NavBar() {
           <div style={{ display: "flex", alignItems: "center" }}>
             <img
               src={Logo}
-              alt="SkillPlate Logo"
+              alt="Skill Odyssey Logo"
               style={{
                 height: "40px",
                 marginRight: "10px",
@@ -87,12 +87,12 @@ function NavBar() {
               style={{
                 margin: 0,
                 padding: "0 20px",
-                color: "#4a90e2",
+                color: "#ffffff",
                 fontSize: "24px",
                 fontWeight: "bold",
               }}
             >
-              SkillPlate
+              Skill Odyssey
             </h1>
           </div>
           <div className="nav_bar_item">
@@ -116,7 +116,7 @@ function NavBar() {
               className={`nav_nav_item ${
                 currentPath === "/allMealProgress" ? "nav_nav_item_active" : ""
               }`}
-              onClick={() => (window.location.href = "/allMealProgress")}
+              onClick={() => (window.location.href = "/allLearningProgress")}
             >
               Skill Progress
             </p>
