@@ -1,0 +1,200 @@
+@import "../../styles/theme.css";
+
+:root {
+  --primary-color: #3a80ba; /* Main blue from logo */
+  --accent-color: #5a9bd5; /* Lighter accent blue */
+  --background-dark: #1e2a38; /* Deep background gray */
+  --overlay-light: rgba(255, 255, 255, 0.05);
+}
+
+/* Global Styles */
+.container {
+  min-height: 100vh;
+  background: url("https://source.unsplash.com/1920x1080/?cooking,food")
+    center/cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: #5e7b7e; /* Dark blue-gray */
+  background-blend-mode: darken;
+  padding-top: 80px;
+}
+
+.section {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Post Cards */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.post-card {
+  background: var(--overlay-light);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.post-card:hover {
+  transform: translateY(-8px);
+}
+
+.post-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.post-card-body {
+  padding: 20px;
+}
+
+.post-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.post-description {
+  font-size: 15px;
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+.category {
+  font-size: 13px;
+  color: var(--primary-color);
+}
+
+/* Floating Add Button */
+.add-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background: #fa5252;
+  transform: scale(1.1);
+}
+
+/* Comment Section */
+.comment-box {
+  background: var(--overlay-light);
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.comment-box input {
+  width: 100%;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.comment-box input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Modal */
+.media-modal {
+  background: rgba(30, 42, 56, 0.95);
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 800px;
+  margin: 5vh auto;
+}
+
+.modal-close {
+  background: var(--primary-color);
+  border: none;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: #fa5252;
+}
+
+/* Not Found */
+.not-found {
+  text-align: center;
+  padding: 40px;
+  background: var(--overlay-light);
+  border-radius: 16px;
+  color: white;
+}
+
+.not-found h2 {
+  margin-bottom: 20px;
+}
+
+.not-found button {
+  background: var(--primary-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.not-found button:hover {
+  background: #fa5252;
+}
+
+/* Like and Comment Buttons */
+.icon-btn {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.icon-btn:hover {
+  color: var(--primary-color);
+}
+
+.icon-btn.liked {
+  color: var(--primary-color);
+}
+
+/* Smooth Animations */
+* {
+  scroll-behavior: smooth;
+}
