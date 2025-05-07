@@ -1,113 +1,134 @@
-.nav_con {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 20px;
-}
-
-.side_logoo {
-    width: 130px;
-    height: 45px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    cursor: pointer;
-}
-
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    transition: transform 0.3s ease;
-    background: rgba(23, 23, 23, 0.8);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  background: rgba(23, 23, 23, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%; /* Ensures navbar spans full width */
+  box-sizing: border-box;
 }
 
 .navbar_hidden {
-    transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
 .navbar_visible {
-    transform: translateY(0);
+  transform: translateY(0);
+}
+
+.nav_con {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  width: 100%; /* Ensure the container spans full width */
+  box-sizing: border-box;
+}
+
+.side_logoo {
+  width: 130px;
+  height: 45px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 .nav_item_set {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav_item_icon {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 24px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .nav_item_icon:hover {
-    color: #ff6b6b;
-    transform: translateY(-2px);
+  color: #ff6b6b;
+  transform: translateY(-2px);
 }
 
 .nav_item_icon_noty {
-    color: #ff6b6b;
-    font-size: 24px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  color: #ff6b6b;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .nav_item_icon_noty:hover {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .nav_bar_item {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .nav_nav_item {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .nav_nav_item:hover {
-    color: #ff6b6b;
-    transform: translateY(-2px);
+  color: #ff6b6b;
+  transform: translateY(-2px);
 }
 
 .nav_nav_item_active {
-    color: #ff6b6b;
+  color: #ff6b6b;
 }
 
 .nav_nav_item_active::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #ff6b6b;
-    border-radius: 2px;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ff6b6b;
+  border-radius: 2px;
 }
 
+/* Mobile responsiveness adjustments */
 @media (max-width: 768px) {
-    .nav_bar_item {
-        gap: 15px;
-    }
+  .nav_bar_item {
+    gap: 15px;
+  }
 
-    .nav_nav_item {
-        font-size: 14px;
-    }
+  .nav_nav_item {
+    font-size: 14px;
+  }
 
-    .nav_item_icon,
-    .nav_item_icon_noty {
-        font-size: 20px;
-    }
+  .nav_item_icon,
+  .nav_item_icon_noty {
+    font-size: 20px;
+  }
+
+  .nav_con {
+    padding: 10px 15px; /* Adjust padding for mobile */
+  }
+
+  /* Make the logo smaller on mobile */
+  .side_logoo {
+    width: 100px;
+    height: 35px;
+  }
+}
+
+/* Optional: Add margin-top to page content so it doesn't get hidden under fixed navbar */
+body {
+  margin: 0;
+  padding-top: 80px; /* Adjust based on navbar height */
 }
