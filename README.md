@@ -114,11 +114,12 @@ POST   /auth/login
 
 ## 👥 Contributors
 
-- **Swiz9** – Progress Tracking
-- **VihangaIT22902252** – Notification Management
-- **Chamodi** – Post Sharing
-- **Tashika Wijesooriya** – Learning Plan Sharing
+- **[Swiz9](https://github.com/Swiz9)** – Progress Tracking  
+- **[Vihangait22902252](https://github.com/Vihangait22902252)** – Notification Management  
+- **[Chamodi54](https://github.com/Chamodi54)** – Post Sharing  
+- **[Tashika-Wijesooriya](https://github.com/Tashika-Wijesooriya)** – Learning Plan Sharing  
 - **Team Skill Odyssey** – User Management
+
 
 
 
