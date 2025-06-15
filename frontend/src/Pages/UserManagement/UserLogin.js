@@ -51,11 +51,9 @@ function UserLogin() {
       </div>
       <div className="auth-card">
         <div className="auth-content">
-          <div className="platform-logo">SkillPlate</div>
-          <h1 className="welcome-text">Welcome to SkillPlate</h1>
-          <p className="subtitle">
-            Join our community of food lovers and learners
-          </p>
+          <div className="platform-logo">Skill Odyssey</div>
+          <h1 className="welcome-text">Welcome to Skill Odyssey</h1>
+          <p className="subtitle">Join our community of learners</p>
 
           <form onSubmit={handleSubmit} className="login-form">
             <div className="form-group">

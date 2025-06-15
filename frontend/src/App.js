@@ -12,9 +12,10 @@ import AllPost from "./Pages/PostManagement/AllPost";
 import UpdatePost from "./Pages/PostManagement/UpdatePost";
 import UserProfile from "./Pages/UserManagement/UserProfile";
 import MyAllPost from "./Pages/PostManagement/MyAllPost";
-import GoogalUserPro from "./Pages/UserManagement/GoogalUserPro";
+import GoogleUserPro from "./Pages/UserManagement/GoogleUserPro";
 import MyLearningPlan from "./Pages/LearningPlan/MyLearningPlan";
 
+// ✅ Updated component imports
 import AddLearningProgress from "./Pages/LearningProgressManagement/AddLearningProgress";
 import AllLearningProgress from "./Pages/LearningProgressManagement/AllLearningProgress";
 import UpdateLearningProgress from "./Pages/LearningProgressManagement/UpdateLearningProgress";
@@ -113,15 +114,15 @@ function App() {
         }
       />
       <Route
-        path="/googalUserPro"
+        path="/GoogleUserPro"
         element={
           <ProtectedRoute>
-            <GoogalUserPro />
+            <GoogleUserPro />
           </ProtectedRoute>
         }
       />
 
-      {/* Protected Routes - Learning Progress */}
+      {/* ✅ Protected Routes - Learning Progress */}
       <Route
         path="/addLearningProgress"
         element={

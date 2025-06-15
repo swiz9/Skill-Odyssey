@@ -152,7 +152,7 @@ function NavBar() {
                   e.target.src = Pro;
                 }}
                 onClick={() => {
-                  window.location.href = "/googalUserPro";
+                  window.location.href = "/GoogleUserPro";
                 }}
               />
             ) : userProfileImage ? (

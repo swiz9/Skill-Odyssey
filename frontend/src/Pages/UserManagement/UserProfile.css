@@ -1,5 +1,5 @@
 /* UserProfile.css - Dark Theme */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
   --primary-color: #ff6b6b;
@@ -22,7 +22,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .profile-page {
@@ -79,18 +79,30 @@
 }
 
 @keyframes move1 {
-  0% { transform: translate(0, 0) rotate(0deg); }
-  100% { transform: translate(100px, 50px) rotate(30deg); }
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(100px, 50px) rotate(30deg);
+  }
 }
 
 @keyframes move2 {
-  0% { transform: translate(0, 0) rotate(0deg); }
-  100% { transform: translate(-100px, -80px) rotate(-20deg); }
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(-100px, -80px) rotate(-20deg);
+  }
 }
 
 @keyframes move3 {
-  0% { transform: translate(0, 0) rotate(0deg); }
-  100% { transform: translate(-50px, 100px) rotate(15deg); }
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50px, 100px) rotate(15deg);
+  }
 }
 
 .profile-container {
@@ -151,8 +163,14 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Profile Header */
@@ -186,7 +204,11 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--primary-dark)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,7 +258,7 @@
 }
 
 .tab-button::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -292,7 +314,7 @@
 }
 
 .card-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -433,13 +455,17 @@
 }
 
 .activity-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   opacity: 0;
   z-index: -1;
   transition: opacity 0.3s ease;
@@ -489,7 +515,7 @@
   color: var(--secondary-color);
 }
 
-.meal-progress .activity-icon {
+.learn-progress .activity-icon {
   background: rgba(246, 185, 59, 0.1);
   color: #f6b93b;
 }
@@ -536,7 +562,7 @@
   animation-delay: 0.5s;
 }
 
-.meal-progress .activity-icon {
+.learn-progress .activity-icon {
   animation: pulse 2s infinite;
   animation-delay: 1s;
 }
@@ -548,31 +574,31 @@
     align-items: center;
     text-align: center;
   }
-  
+
   .profile-image-container {
     margin-right: 0;
     margin-bottom: 20px;
   }
-  
+
   .profile-tabs {
     justify-content: center;
   }
-  
+
   .card-title::after {
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .info-item {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .info-icon {
     margin-right: 0;
     margin-bottom: 10px;
   }
-  
+
   .skills-container {
     justify-content: center;
   }
@@ -583,7 +609,7 @@
   .activities-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .profile-actions {
     flex-direction: column;
   }
@@ -593,16 +619,16 @@
   .profile-header {
     padding: 30px 20px;
   }
-  
+
   .profile-name {
     font-size: 1.8rem;
   }
-  
+
   .profile-details,
   .activities-grid {
     padding: 20px;
   }
-  
+
   .tab-button {
     padding: 10px 15px;
     font-size: 0.9rem;

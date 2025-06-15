@@ -14,7 +14,7 @@
     center/cover no-repeat fixed;
   display: flex;
   flex-direction: column;
-  background-color: #5e7b7e; /* Dark blue-gray */
+  background-color: #ffffff; /* Dark blue-gray */
   background-blend-mode: darken;
   padding-top: 80px;
 }

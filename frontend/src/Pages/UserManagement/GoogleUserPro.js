@@ -18,7 +18,7 @@ export const fetchUserDetails = async (userId) => {
     return null;
   }
 };
-function GoogalUserPro() {
+function GoogleUserPro() {
   const [userData, setUserData] = useState(null);
   const navigate = useNavigate();
   const userId = localStorage.getItem("userID");
@@ -138,4 +138,4 @@ function GoogalUserPro() {
   );
 }
 
-export default GoogalUserPro;
+export default GoogleUserPro;

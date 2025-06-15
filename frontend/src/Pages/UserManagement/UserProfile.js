@@ -249,14 +249,14 @@ function UserProfileContent() {
                 </div>
 
                 <div
-                  className="activity-card meal-progress"
+                  className="activity-card learn-progress"
                   onClick={() => navigate("/myMealProgress")}
                 >
                   <div className="activity-icon">
                     <FaChartLine />
                   </div>
-                  <h3>My Meal Progress</h3>
-                  <p>Track your cooking achievements</p>
+                  <h3>My Learning Progress</h3>
+                  <p>Track your Learning achievements</p>
                 </div>
               </div>
             )}

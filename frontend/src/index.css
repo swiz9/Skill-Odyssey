@@ -1,9 +1,10 @@
-@import './styles/theme.css';
+@import "./styles/theme.css";
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #121212;
+  background-color: #f6cefc; /* Light background to match Skill Odyssey branding */
+  color: var(--text-color); /* Consistent text color from theme */
 }

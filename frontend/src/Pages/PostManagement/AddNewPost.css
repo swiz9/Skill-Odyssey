@@ -2,9 +2,9 @@
 
 :root {
   --primary-color: #3a80ba; /* Soft blue from logo */
-  --secondary-color: #1e2a38; /* Dark slate/gray background */
+  --secondary-color: rgb(30, 42, 56); /* Dark slate/gray background */
   --accent-color: #5a9bd5; /* Lighter blue for accents */
-  --light-overlay: rgba(251, 247, 247, 0.07);
+  --light-overlay: #fbf7f712;
   --border-light: rgba(255, 255, 255, 0.15);
 }
 
